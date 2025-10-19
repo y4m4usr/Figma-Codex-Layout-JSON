@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "project": "HL001",
+    "base_resolution": {
+      "width": 390,
+      "height": 844
+    },
+    "unit": "px",
+    "description": "Figma→Codex: anchors/a11y/i18n/state included",
+    "generated_at": "2025-10-19T19:38:16.161Z"
+  },
+  "components": [
+    {
+      "id": "rectangle_862",
+      "type": "shape",
+      "label": "Rectangle 862",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    }
+  ],
+  "warnings": []
+}
