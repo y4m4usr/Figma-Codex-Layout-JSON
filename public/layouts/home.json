@@ -1,25 +1,36 @@
-{
-  "metadata": {
-    "project": "onboarding_app_ui_v1",
-    "base_resolution": { "width": 390, "height": 844 },
-    "unit": "px",
-    "description": "初期テスト用"
-  },
-  "components": [
-    {
-      "id": "img_logo",
-      "type": "image",
-      "label": "ロゴ",
-      "position": { "x": 145, "y": 180 },
-      "size": { "width": 100, "height": 100 },
-      "src": "./assets/images/img_logo.png"
-    },
-    {
-      "id": "txt_title",
-      "type": "text",
-      "label": "ようこそ！",
-      "position": { "x": 24, "y": 80 },
-      "size": { "width": 220, "height": 40 }
-    }
-  ]
+<!doctype html><meta charset="utf-8">
+<title>Export Codex Layout</title>
+<style>body{font:12px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:12px}textarea{width:100%;height:360px}button{padding:6px 10px;margin-right:6px}</style>
+<h3>Figma → Codex Layout JSON</h3>
+<textarea id="out"></textarea><br>
+<button id="copy">コピー</button>
+<button id="save">layout.jsonを保存</button>
+<button id="close">閉じる</button>
+<div id="warn" style="margin-top:8px;color:#b85600"></div>
+<script>
+var current;
+function blobDl(text,name){
+  var b=new Blob([text],{type:'application/json'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(b); a.download=name; a.click();
+  setTimeout(function(){ URL.revokeObjectURL(a.href); },1000);
 }
+window.onmessage=function(e){
+  var pm=(e.data && e.data.pluginMessage) ? e.data.pluginMessage : {};
+  if(pm.json){
+    current=pm.json;
+    document.getElementById('out').value = JSON.stringify(current, null, 2);
+    var w = (current.warnings && current.warnings.length) ? current.warnings.join(' | ') : '';
+    if (w) document.getElementById('warn').textContent = 'Warnings: ' + w;
+  }
+};
+document.getElementById('copy').onclick = function(){
+  navigator.clipboard.writeText(document.getElementById('out').value).then(function(){ alert('コピーしました'); });
+};
+document.getElementById('save').onclick = function(){
+  blobDl(document.getElementById('out').value, 'layout.json');
+};
+document.getElementById('close').onclick = function(){
+  parent.postMessage({ pluginMessage: { type:'close' } }, '*');
+};
+</script>
