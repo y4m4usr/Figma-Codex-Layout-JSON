@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "project": "onboarding_app_ui_v1",
+    "base_resolution": { "width": 390, "height": 844 },
+    "unit": "px",
+    "description": "初期テスト用"
+  },
+  "components": [
+    {
+      "id": "img_logo",
+      "type": "image",
+      "label": "ロゴ",
+      "position": { "x": 145, "y": 180 },
+      "size": { "width": 100, "height": 100 },
+      "src": "./assets/images/img_logo.png"
+    },
+    {
+      "id": "txt_title",
+      "type": "text",
+      "label": "ようこそ！",
+      "position": { "x": 24, "y": 80 },
+      "size": { "width": 220, "height": 40 }
+    }
+  ]
+}
