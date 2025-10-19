@@ -3,17 +3,37 @@
     "project": "HL001",
     "base_resolution": {
       "width": 390,
-      "height": 844
+      "height": 903
     },
     "unit": "px",
     "description": "Figma→Codex: anchors/a11y/i18n/state included",
-    "generated_at": "2025-10-19T19:38:16.161Z"
+    "generated_at": "2025-10-19T19:58:25.137Z"
   },
   "components": [
     {
       "id": "rectangle_862",
       "type": "shape",
       "label": "Rectangle 862",
+      "position": {
+        "x": -589,
+        "y": 903
+      },
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "2_9",
+      "type": "image",
+      "label": "2 9",
       "position": {
         "x": 0,
         "y": 0
@@ -27,9 +47,1010 @@
         "horizontal": "MIN",
         "vertical": "MIN"
       },
+      "a11y": {
+        "role": "img",
+        "alt": "2 9"
+      },
+      "state": "default",
+      "src": "./assets/images/2_9.png",
+      "src_webp": "./assets/images/2_9.webp",
+      "src_avif": "./assets/images/2_9.avif"
+    },
+    {
+      "id": "rogo_1",
+      "type": "image",
+      "label": "rogo 1",
+      "position": {
+        "x": 28,
+        "y": 133
+      },
+      "size": {
+        "width": 335,
+        "height": 211
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "CENTER",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "rogo 1"
+      },
+      "state": "default",
+      "src": "./assets/images/rogo_1.png",
+      "src_webp": "./assets/images/rogo_1.webp",
+      "src_avif": "./assets/images/rogo_1.avif"
+    },
+    {
+      "id": "input_text",
+      "type": "group",
+      "label": "Input Text",
+      "position": {
+        "x": 38,
+        "y": 367
+      },
+      "size": {
+        "width": 315,
+        "height": 66
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
       "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "frame",
+      "type": "group",
+      "label": "Frame",
+      "position": {
+        "x": 38,
+        "y": 367
+      },
+      "size": {
+        "width": 315,
+        "height": 66
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Name",
+      "position": {
+        "x": 38,
+        "y": 367
+      },
+      "size": {
+        "width": 315,
+        "height": 20
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "User ID"
+      },
+      "text_key": "txt_name",
+      "state": "default"
+    },
+    {
+      "id": "inputtextbase",
+      "type": "group",
+      "label": "_InputTextBase",
+      "position": {
+        "x": 38,
+        "y": 393
+      },
+      "size": {
+        "width": 315,
+        "height": 40
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "frame",
+      "type": "group",
+      "label": "Frame",
+      "position": {
+        "x": 50,
+        "y": 403
+      },
+      "size": {
+        "width": 291,
+        "height": 20
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "icon",
+      "type": "group",
+      "label": "Icon",
+      "position": {
+        "x": 50,
+        "y": 403
+      },
+      "size": {
+        "width": 20,
+        "height": 20
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "vector",
+      "type": "shape",
+      "label": "Vector",
+      "position": {
+        "x": 52,
+        "y": 403
+      },
+      "size": {
+        "width": 16,
+        "height": 18
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "text",
+      "type": "text",
+      "label": "Text",
+      "position": {
+        "x": 78,
+        "y": 404
+      },
+      "size": {
+        "width": 263,
+        "height": 18
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "例） H1234"
+      },
+      "text_key": "txt_text",
+      "state": "default"
+    },
+    {
+      "id": "icon",
+      "type": "group",
+      "label": "Icon",
+      "position": {
+        "x": 326,
+        "y": 403
+      },
+      "size": {
+        "width": 20,
+        "height": 20
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "vector",
+      "type": "shape",
+      "label": "Vector",
+      "position": {
+        "x": 326,
+        "y": 405
+      },
+      "size": {
+        "width": 19,
+        "height": 16
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "frame",
+      "type": "group",
+      "label": "Frame",
+      "position": {
+        "x": 38,
+        "y": 439
+      },
+      "size": {
+        "width": 320,
+        "height": 4
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "progressbaratom",
+      "type": "group",
+      "label": "_ProgressBarAtom",
+      "position": {
+        "x": 38,
+        "y": 439
+      },
+      "size": {
+        "width": 77,
+        "height": 4
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "progressbaratom",
+      "type": "group",
+      "label": "_ProgressBarAtom",
+      "position": {
+        "x": 119,
+        "y": 439
+      },
+      "size": {
+        "width": 77,
+        "height": 4
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "progressbaratom",
+      "type": "group",
+      "label": "_ProgressBarAtom",
+      "position": {
+        "x": 200,
+        "y": 439
+      },
+      "size": {
+        "width": 77,
+        "height": 4
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "progressbaratom",
+      "type": "group",
+      "label": "_ProgressBarAtom",
+      "position": {
+        "x": 281,
+        "y": 439
+      },
+      "size": {
+        "width": 77,
+        "height": 4
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Name",
+      "position": {
+        "x": 38,
+        "y": 449
+      },
+      "size": {
+        "width": 320,
+        "height": 18
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "Name"
+      },
+      "text_key": "txt_name",
+      "state": "default"
+    },
+    {
+      "id": "input_text",
+      "type": "group",
+      "label": "Input Text",
+      "position": {
+        "x": 38,
+        "y": 456
+      },
+      "size": {
+        "width": 315,
+        "height": 66
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "frame",
+      "type": "group",
+      "label": "Frame",
+      "position": {
+        "x": 38,
+        "y": 456
+      },
+      "size": {
+        "width": 315,
+        "height": 66
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Name",
+      "position": {
+        "x": 38,
+        "y": 456
+      },
+      "size": {
+        "width": 315,
+        "height": 20
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "User  Name"
+      },
+      "text_key": "txt_name",
+      "state": "default"
+    },
+    {
+      "id": "inputtextbase",
+      "type": "group",
+      "label": "_InputTextBase",
+      "position": {
+        "x": 38,
+        "y": 482
+      },
+      "size": {
+        "width": 315,
+        "height": 40
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "frame",
+      "type": "group",
+      "label": "Frame",
+      "position": {
+        "x": 50,
+        "y": 491
+      },
+      "size": {
+        "width": 291,
+        "height": 22
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "user",
+      "type": "group",
+      "label": "User",
+      "position": {
+        "x": 50,
+        "y": 492
+      },
+      "size": {
+        "width": 20,
+        "height": 20
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "vector",
+      "type": "shape",
+      "label": "Vector",
+      "position": {
+        "x": 52,
+        "y": 494
+      },
+      "size": {
+        "width": 17,
+        "height": 16
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "text",
+      "type": "text",
+      "label": "Text",
+      "position": {
+        "x": 78,
+        "y": 491
+      },
+      "size": {
+        "width": 263,
+        "height": 22
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "例） ホテル  ラバーズ"
+      },
+      "text_key": "txt_text",
+      "state": "default"
+    },
+    {
+      "id": "icon",
+      "type": "group",
+      "label": "Icon",
+      "position": {
+        "x": 326,
+        "y": 492
+      },
+      "size": {
+        "width": 20,
+        "height": 20
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "vector",
+      "type": "shape",
+      "label": "Vector",
+      "position": {
+        "x": 328,
+        "y": 494
+      },
+      "size": {
+        "width": 17,
+        "height": 17
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Name",
+      "position": {
+        "x": 38,
+        "y": 528
+      },
+      "size": {
+        "width": 320,
+        "height": 18
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "This is an input helper text."
+      },
+      "text_key": "txt_name",
+      "state": "default"
+    },
+    {
+      "id": "group_826",
+      "type": "group",
+      "label": "Group 826",
+      "position": {
+        "x": 38,
+        "y": 569
+      },
+      "size": {
+        "width": 315,
+        "height": 51
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "group_825",
+      "type": "group",
+      "label": "Group 825",
+      "position": {
+        "x": 38,
+        "y": 569
+      },
+      "size": {
+        "width": 315,
+        "height": 51
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "group_824",
+      "type": "group",
+      "label": "Group 824",
+      "position": {
+        "x": 38,
+        "y": 569
+      },
+      "size": {
+        "width": 315,
+        "height": 51
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "group_823",
+      "type": "group",
+      "label": "Group 823",
+      "position": {
+        "x": 38,
+        "y": 569
+      },
+      "size": {
+        "width": 315,
+        "height": 51
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "system_notifications_light_banners_double",
+      "type": "group",
+      "label": "System/Notifications/Light/Banners/Double",
+      "position": {
+        "x": 38,
+        "y": 569
+      },
+      "size": {
+        "width": 315,
+        "height": 51
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "CENTER",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "notification_1",
+      "type": "group",
+      "label": "Notification 1",
+      "position": {
+        "x": 38,
+        "y": 569
+      },
+      "size": {
+        "width": 315,
+        "height": 46
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "text",
+      "type": "group",
+      "label": "Text",
+      "position": {
+        "x": 102,
+        "y": 581
+      },
+      "size": {
+        "width": 235,
+        "height": 35
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "description",
+      "type": "text",
+      "label": "Description",
+      "position": {
+        "x": 102,
+        "y": 599
+      },
+      "size": {
+        "width": 235,
+        "height": 17
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "Description"
+      },
+      "text_key": "txt_description",
+      "state": "default"
+    },
+    {
+      "id": "stack",
+      "type": "group",
+      "label": "Stack",
+      "position": {
+        "x": 102,
+        "y": 581
+      },
+      "size": {
+        "width": 235,
+        "height": 18
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "time",
+      "type": "text",
+      "label": "Time",
+      "position": {
+        "x": 280,
+        "y": 581
+      },
+      "size": {
+        "width": 57,
+        "height": 36
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MAX",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "9:41 AM"
+      },
+      "text_key": "txt_time",
+      "state": "default"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "label": "Title",
+      "position": {
+        "x": 102,
+        "y": 581
+      },
+      "size": {
+        "width": 163,
+        "height": 18
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "ログイン"
+      },
+      "text_key": "txt_title",
+      "state": "default"
+    },
+    {
+      "id": "app_icon",
+      "type": "group",
+      "label": "App Icon",
+      "position": {
+        "x": 52,
+        "y": 581
+      },
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "icon_shape",
+      "type": "group",
+      "label": "Icon Shape",
+      "position": {
+        "x": 52,
+        "y": 581
+      },
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "icon_shape",
+      "type": "shape",
+      "label": "Icon Shape",
+      "position": {
+        "x": 52,
+        "y": 581
+      },
+      "size": {
+        "width": 256,
+        "height": 256
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "rectangle",
+      "type": "shape",
+      "label": "Rectangle",
+      "position": {
+        "x": 52,
+        "y": 581
+      },
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "group_826",
+      "type": "group",
+      "label": "Group 826",
+      "position": {
+        "x": 148,
+        "y": 580
+      },
+      "size": {
+        "width": 95,
+        "height": 24
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "group_825",
+      "type": "group",
+      "label": "Group 825",
+      "position": {
+        "x": 148,
+        "y": 580
+      },
+      "size": {
+        "width": 95,
+        "height": 24
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "group_823",
+      "type": "group",
+      "label": "Group 823",
+      "position": {
+        "x": 148,
+        "y": 580
+      },
+      "size": {
+        "width": 95,
+        "height": 24
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "group_824",
+      "type": "group",
+      "label": "Group 824",
+      "position": {
+        "x": 148,
+        "y": 580
+      },
+      "size": {
+        "width": 95,
+        "height": 24
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "",
+      "type": "text",
+      "label": "ログイン",
+      "position": {
+        "x": 148,
+        "y": 580
+      },
+      "size": {
+        "width": 95,
+        "height": 24
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "CENTER",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "ログイン"
+      },
       "state": "default"
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Small tap area: vector (16x18) < 44px",
+    "Small tap area: vector (19x16) < 44px",
+    "Small tap area: vector (17x16) < 44px",
+    "Small tap area: vector (17x17) < 44px",
+    "Small tap area: rectangle (40x40) < 44px"
+  ]
 }
