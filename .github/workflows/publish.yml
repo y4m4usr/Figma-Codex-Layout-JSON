@@ -1,0 +1,89 @@
+name: Validate/Optimize/Publish
+on:
+  pull_request:
+    branches: [ "main" ]
+  push:
+    branches: [ "main" ]
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  pull-requests: write
+env:
+  MAX_WIDTH: "2048"
+  MAX_HEIGHT: "2048"
+  MAX_BYTES: "524288"
+  L_S: "640"
+  L_M: "1280"
+  L_L: "1920"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: |
+          npm i -g ajv-cli @squoosh/cli
+          sudo apt-get update
+          sudo apt-get install -y imagemagick pngquant libimage-exiftool-perl
+      - name: Validate layouts with AJV
+        run: |
+          npx ajv -s schemas/layout.schema.json -d "public/layouts/*.json" --all-errors
+      - name: Normalize to sRGB & Guard
+        shell: bash
+        run: |
+          shopt -s globstar nullglob
+          FAILS=0
+          for f in assets/images/**/*; do
+            [ -f "$f" ] || continue
+            ext="${f##*.}"
+            size=$(stat -c%s "$f" 2>/dev/null || stat -f%z "$f")
+            if [ "$size" -gt "$MAX_BYTES" ]; then echo "::error file=$f::size ${size} > ${MAX_BYTES}"; FAILS=$((FAILS+1)); fi
+            case "${ext,,}" in
+              png|jpg|jpeg)
+                convert "$f" -colorspace sRGB +profile icc "$f"
+                read W H < <(identify -format "%w %h" "$f")
+                [ "$W" -le "$MAX_WIDTH" ] || { echo "::error file=$f::width ${W} > ${MAX_WIDTH}"; FAILS=$((FAILS+1)); }
+                [ "$H" -le "$MAX_HEIGHT" ] || { echo "::error file=$f::height ${H} > ${MAX_HEIGHT}"; FAILS=$((FAILS+1)); }
+                ;;
+              svg) : ;;
+              *) echo "::warning file=$f::unsupported ext";;
+            esac
+          done
+          [ "$FAILS" -eq 0 ] || { echo "Image guard failed"; exit 1; }
+      - name: Prepare public dirs
+        run: |
+          mkdir -p public/assets/images
+          mkdir -p public/layouts
+      - name: Optimize PNG (pngquant+zopflipng)
+        run: |
+          for p in assets/images/*.png; do
+            [ -f "$p" ] || continue
+            base=$(basename "$p")
+            pngquant --quality=70-90 --speed 1 --force --output "public/assets/images/$base" "$p"
+            zopflipng -y "public/assets/images/$base" "public/assets/images/$base"
+          done
+      - name: Generate WebP/AVIF and responsive sizes
+        run: |
+          for p in assets/images/*.{jpg,jpeg,png}; do
+            [ -f "$p" ] || continue
+            name=$(basename "${p%.*}")
+            npx @squoosh/cli --oxipng "level=2" -d public/assets/images "$p"
+            for w in $L_S $L_M $L_L; do
+              convert "$p" -resize "${w}" "public/assets/images/${name}.${w}.png"
+            done
+            for w in $L_S $L_M $L_L; do
+              npx @squoosh/cli --webp "quality=78" --avif "cqLevel=35" -d public/assets/images "public/assets/images/${name}.${w}.png"
+            done
+          done
+      - name: Build hashed manifest & rewrite layout src/srcset
+        run: node scripts/build-manifest.mjs
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with: { path: public }
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/deploy-pages@v4
