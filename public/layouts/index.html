@@ -6,87 +6,38 @@
 <title>Figma Layout Viewer</title>
 <style>
   body { margin:0; background:#f8f8f8; font-family:system-ui,sans-serif; }
-  #stage {
-    position:relative;
-    margin:auto;
-    width:390px; height:844px;
-    transform-origin:top left;
-    background:white;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-  }
+  #stage { position:relative; margin:auto; width:390px; height:844px; transform-origin:top left; background:white; box-shadow:0 0 10px rgba(0,0,0,0.2); }
   img { display:block; width:100%; height:100%; object-fit:contain; }
-  button { font-size:14px; }
 </style>
 </head>
 <body>
   <h3 style="text-align:center;">Codex Layout Preview</h3>
   <div id="stage"></div>
-
   <script>
   async function init() {
     const layout = await (await fetch('./layouts/home.json')).json();
     const baseW = layout.metadata.base_resolution.width;
-    const baseH = layout.metadata.base_resolution.height;
     const stage = document.getElementById('stage');
-
-    // スケーリング
-    function fit() {
-      const vw = Math.min(window.innerWidth, 430);
-      const scale = vw / baseW;
-      stage.style.transform = `scale(${scale})`;
-    }
-    window.addEventListener('resize', fit);
-    fit();
-
-    // 各要素を追加
+    function fit(){ const vw = Math.min(window.innerWidth, 430); stage.style.transform = 'scale(' + (vw/baseW) + ')'; }
+    addEventListener('resize', fit); fit();
     layout.components.forEach(c => {
       const el = document.createElement('div');
-      el.id = c.id;
-      el.style.position = 'absolute';
-      el.style.left = c.position.x + 'px';
-      el.style.top = c.position.y + 'px';
-      el.style.width = c.size.width + 'px';
-      el.style.height = c.size.height + 'px';
-
+      el.id = c.id; el.style.position = 'absolute';
+      el.style.left = c.position.x + 'px'; el.style.top = c.position.y + 'px';
+      el.style.width = c.size.width + 'px'; el.style.height = c.size.height + 'px';
       if (c.type === 'image') {
         const pic = document.createElement('picture');
-
-        // webp/avif優先
-        const srcAvif = c.src_avif || c.src?.replace('.png','.avif');
-        const srcWebp = c.src_webp || c.src?.replace('.png','.webp');
-        if (srcAvif) {
-          const s = document.createElement('source');
-          s.srcset = srcAvif;
-          s.type = 'image/avif';
-          pic.appendChild(s);
-        }
-        if (srcWebp) {
-          const s = document.createElement('source');
-          s.srcset = srcWebp;
-          s.type = 'image/webp';
-          pic.appendChild(s);
-        }
-
-        const img = document.createElement('img');
-        img.src = c.src || './assets/images/' + c.id + '.png';
-        img.alt = (c.a11y && c.a11y.alt) || c.label || '';
-        pic.appendChild(img);
+        if (c.src_avif) { const s = document.createElement('source'); s.type='image/avif'; s.srcset=c.src_avif; pic.appendChild(s); }
+        if (c.src_webp) { const s = document.createElement('source'); s.type='image/webp'; s.srcset=c.src_webp; pic.appendChild(s); }
+        const img = document.createElement('img'); img.src = c.src || ('./assets/images/' + c.id + '.png'); img.alt = (c.a11y&&c.a11y.alt)||c.label||''; pic.appendChild(img);
         el.appendChild(pic);
       } else if (c.type === 'text') {
-        el.textContent = c.label;
-        el.style.display = 'flex';
-        el.style.alignItems = 'center';
-        el.style.justifyContent = 'center';
-      } else if (c.type === 'button') {
-        const btn = document.createElement('button');
-        btn.textContent = c.label;
-        el.appendChild(btn);
+        el.textContent = c.label || '';
+        el.style.display = 'flex'; el.style.alignItems = 'center'; el.style.justifyContent = 'center';
       }
       stage.appendChild(el);
     });
-  }
-  init();
+  } init();
   </script>
 </body>
 </html>
-
