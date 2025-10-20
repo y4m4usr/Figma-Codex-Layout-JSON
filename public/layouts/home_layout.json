@@ -1,0 +1,1072 @@
+{
+  "metadata": {
+    "project": "HL001",
+    "base_resolution": {
+      "width": 390,
+      "height": 844
+    },
+    "unit": "px",
+    "description": "Figma→Codex: anchors/a11y/i18n/state included",
+    "generated_at": "2025-10-20T01:34:48.012Z"
+  },
+  "components": [
+    {
+      "id": "rectangle_862",
+      "type": "shape",
+      "label": "Rectangle 862",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "8_3",
+      "type": "image",
+      "label": "8 3",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "8 3"
+      },
+      "state": "default",
+      "src": "./assets/images/8_3.png",
+      "src_webp": "./assets/images/8_3.webp",
+      "src_avif": "./assets/images/8_3.avif"
+    },
+    {
+      "id": "group_830",
+      "type": "group",
+      "label": "Group 830",
+      "position": {
+        "x": 19,
+        "y": 115
+      },
+      "size": {
+        "width": 346,
+        "height": 185
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "liquid_glass_-_clear_light",
+      "type": "group",
+      "label": "Liquid Glass - Clear/Light",
+      "position": {
+        "x": 19,
+        "y": 115
+      },
+      "size": {
+        "width": 346,
+        "height": 185
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "shadow",
+      "type": "group",
+      "label": "Shadow",
+      "position": {
+        "x": -7,
+        "y": 89
+      },
+      "size": {
+        "width": 398,
+        "height": 237
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "mask",
+      "type": "group",
+      "label": "Mask",
+      "position": {
+        "x": -57,
+        "y": 39
+      },
+      "size": {
+        "width": 498,
+        "height": 337
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "shape",
+      "type": "shape",
+      "label": "Shape",
+      "position": {
+        "x": 19,
+        "y": 115
+      },
+      "size": {
+        "width": 346,
+        "height": 185
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "blur",
+      "type": "group",
+      "label": "Blur",
+      "position": {
+        "x": 19,
+        "y": 120
+      },
+      "size": {
+        "width": 346,
+        "height": 185
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "glass_effect",
+      "type": "group",
+      "label": "Glass Effect",
+      "position": {
+        "x": 19,
+        "y": 115
+      },
+      "size": {
+        "width": 346,
+        "height": 185
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "",
+      "type": "text",
+      "label": "称号 カラコンルーキー",
+      "position": {
+        "x": 141,
+        "y": 173
+      },
+      "size": {
+        "width": 192,
+        "height": 68
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "称号 カラコンルーキー"
+      },
+      "state": "default"
+    },
+    {
+      "id": "",
+      "type": "text",
+      "label": "渋谷店",
+      "position": {
+        "x": 140,
+        "y": 170
+      },
+      "size": {
+        "width": 48,
+        "height": 22
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "渋谷店"
+      },
+      "state": "default"
+    },
+    {
+      "id": "icon_2",
+      "type": "image",
+      "label": "icon 2",
+      "position": {
+        "x": 34,
+        "y": 139
+      },
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "icon 2"
+      },
+      "state": "default",
+      "src": "./assets/images/icon_2.png",
+      "src_webp": "./assets/images/icon_2.webp",
+      "src_avif": "./assets/images/icon_2.avif"
+    },
+    {
+      "id": "text",
+      "type": "text",
+      "label": "Text",
+      "position": {
+        "x": 137,
+        "y": 135
+      },
+      "size": {
+        "width": 191,
+        "height": 33
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "ホテル  ラバーズ"
+      },
+      "text_key": "txt_text",
+      "state": "default"
+    },
+    {
+      "id": "group_831",
+      "type": "group",
+      "label": "Group 831",
+      "position": {
+        "x": 25,
+        "y": 231
+      },
+      "size": {
+        "width": 334,
+        "height": 59
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "group_803",
+      "type": "group",
+      "label": "Group 803",
+      "position": {
+        "x": 25,
+        "y": 231
+      },
+      "size": {
+        "width": 334,
+        "height": 59
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "liquid_glass_-_clear_light",
+      "type": "group",
+      "label": "Liquid Glass - Clear/Light",
+      "position": {
+        "x": 25,
+        "y": 231
+      },
+      "size": {
+        "width": 334,
+        "height": 59
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "shadow",
+      "type": "group",
+      "label": "Shadow",
+      "position": {
+        "x": -1,
+        "y": 205
+      },
+      "size": {
+        "width": 386,
+        "height": 111
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "mask",
+      "type": "group",
+      "label": "Mask",
+      "position": {
+        "x": -51,
+        "y": 155
+      },
+      "size": {
+        "width": 486,
+        "height": 211
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "shape",
+      "type": "shape",
+      "label": "Shape",
+      "position": {
+        "x": 25,
+        "y": 231
+      },
+      "size": {
+        "width": 334,
+        "height": 59
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "blur",
+      "type": "group",
+      "label": "Blur",
+      "position": {
+        "x": 25,
+        "y": 236
+      },
+      "size": {
+        "width": 334,
+        "height": 59
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "glass_effect",
+      "type": "group",
+      "label": "Glass Effect",
+      "position": {
+        "x": 25,
+        "y": 231
+      },
+      "size": {
+        "width": 334,
+        "height": 59
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "",
+      "type": "text",
+      "label": "ポイント",
+      "position": {
+        "x": 158,
+        "y": 267
+      },
+      "size": {
+        "width": 66,
+        "height": 17
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "ポイント"
+      },
+      "state": "default"
+    },
+    {
+      "id": "lv_1",
+      "type": "text",
+      "label": "Lv.1",
+      "position": {
+        "x": 62,
+        "y": 239
+      },
+      "size": {
+        "width": 41,
+        "height": 23
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "Lv.1"
+      },
+      "text_key": "txt_lv_1",
+      "state": "default"
+    },
+    {
+      "id": "3",
+      "type": "text",
+      "label": "3日",
+      "position": {
+        "x": 268,
+        "y": 239
+      },
+      "size": {
+        "width": 41,
+        "height": 23
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "3日"
+      },
+      "text_key": "txt_3",
+      "state": "default"
+    },
+    {
+      "id": "900",
+      "type": "text",
+      "label": "900",
+      "position": {
+        "x": 162,
+        "y": 239
+      },
+      "size": {
+        "width": 49,
+        "height": 23
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "900"
+      },
+      "text_key": "txt_900",
+      "state": "default"
+    },
+    {
+      "id": "",
+      "type": "text",
+      "label": "連続ログイン",
+      "position": {
+        "x": 244,
+        "y": 267
+      },
+      "size": {
+        "width": 99,
+        "height": 17
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "連続ログイン"
+      },
+      "state": "default"
+    },
+    {
+      "id": "",
+      "type": "text",
+      "label": "レベル",
+      "position": {
+        "x": 60,
+        "y": 267
+      },
+      "size": {
+        "width": 50,
+        "height": 17
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "レベル"
+      },
+      "state": "default"
+    },
+    {
+      "id": "group_832",
+      "type": "group",
+      "label": "Group 832",
+      "position": {
+        "x": 19,
+        "y": 320
+      },
+      "size": {
+        "width": 353,
+        "height": 350
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "btn-stats_5",
+      "type": "image",
+      "label": "btn-stats 5",
+      "position": {
+        "x": 203,
+        "y": 502
+      },
+      "size": {
+        "width": 169,
+        "height": 169
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "btn-stats 5"
+      },
+      "state": "default",
+      "src": "./assets/images/btn-stats_5.png",
+      "src_webp": "./assets/images/btn-stats_5.webp",
+      "src_avif": "./assets/images/btn-stats_5.avif"
+    },
+    {
+      "id": "btn-ranking_6",
+      "type": "image",
+      "label": "btn-ranking 6",
+      "position": {
+        "x": 19,
+        "y": 502
+      },
+      "size": {
+        "width": 169,
+        "height": 169
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "btn-ranking 6"
+      },
+      "state": "default",
+      "src": "./assets/images/btn-ranking_6.png",
+      "src_webp": "./assets/images/btn-ranking_6.webp",
+      "src_avif": "./assets/images/btn-ranking_6.avif"
+    },
+    {
+      "id": "btn-practice_9",
+      "type": "image",
+      "label": "btn-practice 9",
+      "position": {
+        "x": 201,
+        "y": 320
+      },
+      "size": {
+        "width": 169,
+        "height": 169
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "btn-practice 9"
+      },
+      "state": "default",
+      "src": "./assets/images/btn-practice_9.png",
+      "src_webp": "./assets/images/btn-practice_9.webp",
+      "src_avif": "./assets/images/btn-practice_9.avif"
+    },
+    {
+      "id": "btn-daily_6",
+      "type": "image",
+      "label": "btn-daily 6",
+      "position": {
+        "x": 19,
+        "y": 320
+      },
+      "size": {
+        "width": 169,
+        "height": 169
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "btn-daily 6"
+      },
+      "state": "default",
+      "src": "./assets/images/btn-daily_6.png",
+      "src_webp": "./assets/images/btn-daily_6.webp",
+      "src_avif": "./assets/images/btn-daily_6.avif"
+    },
+    {
+      "id": "group_802",
+      "type": "group",
+      "label": "Group 802",
+      "position": {
+        "x": 18,
+        "y": 712
+      },
+      "size": {
+        "width": 351,
+        "height": 60
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "liquid_glass_-_clear_light",
+      "type": "group",
+      "label": "Liquid Glass - Clear/Light",
+      "position": {
+        "x": 18,
+        "y": 712
+      },
+      "size": {
+        "width": 351,
+        "height": 60
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "shadow",
+      "type": "group",
+      "label": "Shadow",
+      "position": {
+        "x": -8,
+        "y": 686
+      },
+      "size": {
+        "width": 403,
+        "height": 112
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "mask",
+      "type": "group",
+      "label": "Mask",
+      "position": {
+        "x": -58,
+        "y": 636
+      },
+      "size": {
+        "width": 503,
+        "height": 212
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "shape",
+      "type": "shape",
+      "label": "Shape",
+      "position": {
+        "x": 18,
+        "y": 712
+      },
+      "size": {
+        "width": 351,
+        "height": 60
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "blur",
+      "type": "group",
+      "label": "Blur",
+      "position": {
+        "x": 18,
+        "y": 717
+      },
+      "size": {
+        "width": 351,
+        "height": 60
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "glass_effect",
+      "type": "group",
+      "label": "Glass Effect",
+      "position": {
+        "x": 18,
+        "y": 712
+      },
+      "size": {
+        "width": 351,
+        "height": 60
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "icon_my_4",
+      "type": "image",
+      "label": "icon_my 4",
+      "position": {
+        "x": 131,
+        "y": 722
+      },
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "icon_my 4"
+      },
+      "state": "default",
+      "src": "./assets/images/icon_my_4.png",
+      "src_webp": "./assets/images/icon_my_4.webp",
+      "src_avif": "./assets/images/icon_my_4.avif"
+    },
+    {
+      "id": "icon_bell_4",
+      "type": "image",
+      "label": "icon_bell 4",
+      "position": {
+        "x": 211,
+        "y": 722
+      },
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "icon_bell 4"
+      },
+      "state": "default",
+      "src": "./assets/images/icon_bell_4.png",
+      "src_webp": "./assets/images/icon_bell_4.webp",
+      "src_avif": "./assets/images/icon_bell_4.avif"
+    },
+    {
+      "id": "icon_home",
+      "type": "image",
+      "label": "icon_home",
+      "position": {
+        "x": 291,
+        "y": 722
+      },
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "icon_home"
+      },
+      "state": "default",
+      "src": "./assets/images/icon_home.png",
+      "src_webp": "./assets/images/icon_home.webp",
+      "src_avif": "./assets/images/icon_home.avif"
+    },
+    {
+      "id": "icon_logout_5",
+      "type": "image",
+      "label": "icon_logout 5",
+      "position": {
+        "x": 45,
+        "y": 722
+      },
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "img",
+        "alt": "icon_logout 5"
+      },
+      "state": "default",
+      "src": "./assets/images/icon_logout_5.png",
+      "src_webp": "./assets/images/icon_logout_5.webp",
+      "src_avif": "./assets/images/icon_logout_5.avif"
+    },
+    {
+      "id": "group_831",
+      "type": "group",
+      "label": "Group 831",
+      "position": {
+        "x": 45,
+        "y": 456
+      },
+      "size": {
+        "width": 318,
+        "height": 208
+      },
+      "anchors": {
+        "anchor": "absolute"
+      },
+      "a11y": {},
+      "state": "default"
+    },
+    {
+      "id": "",
+      "type": "text",
+      "label": "本番モード",
+      "position": {
+        "x": 45,
+        "y": 463
+      },
+      "size": {
+        "width": 114,
+        "height": 19
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "本番モード"
+      },
+      "state": "default"
+    },
+    {
+      "id": "my",
+      "type": "text",
+      "label": "MY成績",
+      "position": {
+        "x": 252,
+        "y": 645
+      },
+      "size": {
+        "width": 77,
+        "height": 19
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "MY成績"
+      },
+      "text_key": "txt_my",
+      "state": "default"
+    },
+    {
+      "id": "",
+      "type": "text",
+      "label": "ランキング",
+      "position": {
+        "x": 50,
+        "y": 645
+      },
+      "size": {
+        "width": 104,
+        "height": 19
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "ランキング"
+      },
+      "state": "default"
+    },
+    {
+      "id": "",
+      "type": "text",
+      "label": "練習モード",
+      "position": {
+        "x": 208,
+        "y": 456
+      },
+      "size": {
+        "width": 155,
+        "height": 33
+      },
+      "anchors": {
+        "anchor": "constraints",
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "a11y": {
+        "role": "text",
+        "ariaLabel": "練習モード"
+      },
+      "state": "default"
+    }
+  ],
+  "warnings": [
+    "Small tap area: icon_my_4 (40x40) < 44px",
+    "Small tap area: icon_bell_4 (40x40) < 44px",
+    "Small tap area: icon_home (40x40) < 44px",
+    "Small tap area: icon_logout_5 (40x40) < 44px"
+  ]
+}
